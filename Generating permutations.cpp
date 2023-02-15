@@ -14,8 +14,8 @@ void generate_permutation(vector<int>& arr, vector<int>& permutation, vector<boo
           chosen[i] = true;
           permutation.push_back(arr[i]);
           generate_permutation(arr, permutation, chosen);
-          permutation.pop_back();
           chosen[i] = false;
+          permutation.pop_back();
         }
     }
 }
