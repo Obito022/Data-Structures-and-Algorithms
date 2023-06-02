@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+// Total Time complexity O(n * (2^n))
 
 vector<vector<int>> generateSubsets(vector<int> &set) {
   int n = set.size();
